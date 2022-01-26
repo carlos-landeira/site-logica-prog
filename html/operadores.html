@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Operadores</title>
+	  <meta charset="utf-8">
+	  <meta name="description" content="Operadores aritméticos e relacionais na linguagem Python!">
+    <meta name="keywords" content="Lógica, Programação, Operadores, Aritméticos, Relacionais">
+    <meta name="author" content="Carlos Eduardo">
+
+    <link rel="stylesheet" type="text/css" href="../CSS/operadores.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+</head>
+<body>
+
+<header>
+   <a href="#"><img id="animar" src="../img/logo.png" class="logo" alt="logo"></a>
+    <div class="conteudo">
+   
+      <nav>
+        <ul>
+          <li><a href="index.html" accesskey="m">Menu principal</a></li>
+          <li><a href="boleana.html" accesskey="b">Lógica Booleana</a></li>
+          <li><a href="operadores.html" accesskey="o">Operadores aritméticos e relacionais</a></li>
+          <li><a href="paulo.html" accesskey="p">Laços de repetição </a></li>
+        
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<h1 class="titulo">Operadores Aritméticos</h1>
+
+<p class="paragrafo">Operadores aritméticos são os "fundamentais", são aqueles que fazemos mais comumente como adição, subtração, divisão e multiplicação, e também alguns outros não tão utilizados. Vale lembrar que todos os operadores podem variar em cada linguagem de programação, mas estaremos usando como exemplo os da linguagem Python. Abaixo uma tabela com os operadores aritméticos em Python: </p><br><br>
+
+<table>
+  <tr>
+    <th>Operador</th>
+    <th>Sinal</th>
+  </tr>
+  <tr>
+    <td><b>Adição</b></td>
+    <td><b>+</b></td>
+  </tr>
+  <tr>
+    <td><b>Subtração</b></td>
+    <td><b>-</b></td>
+  </tr>
+  <tr>
+    <td><b>Multiplicação</b></td>
+    <td><b>*</b></td>
+  </tr>
+  <tr>
+    <td><b>Divisão</b></td>
+    <td><b>/</b></td>
+  </tr>
+  <tr>
+    <td><b>Módulo (Resto)</b></td>
+    <td><b>%</b></td>
+  </tr>
+  <tr>
+    <td><b>Exponencição</b></td>
+    <td><b>**</b></td>
+  </tr>
+  <tr>
+    <td><b>Divisão Inteira</b></td>
+    <td><b>//</b></td>
+  </tr>
+</table>
+<br><br>
+
+<p class="paragrafo">Uma das características mais importantes sobre os Operadores Aritméticos muitas vezes ignorada é que eles possuem uma ordem de execução, como mostrado abaixo:</p>
+
+<ol>
+  <li>Operações dentro dos parênteses indo das
+mais internas para as mais externas;</li>
+  <li>**(Exponenciação);</li>
+  <li>* (Multiplicação), / (Divisão), // (Divisão Inteira), % (Módulo ou Resto);</li>
+  <li>+ (Adição), - (Subtração).</li>
+</ol>
+<br>
+<h2>Importante ressaltar que, na programação:</h2>
+<ul>
+  <li>Os níveis de importância das operações são
+  representando apenas por ( ) (parênteses), ou seja
+  não usamos [ ] (colchetes) ou
+  { } (chaves);</li>
+  <li>Diferente do que estamos acostumados, em diversas linguagens de
+programação, separamos a parte inteira da parte fracionária de um
+número do tipo real com o <strong>ponto</strong> ao invés de vírgula.</li>
+</ul>
+<br><br>
+
+<h1 class="subtitulo">Exemplos</h1>
+
+<table>
+  <tr>
+    <th>Operador</th>
+    <th>Exemplo</th>
+  </tr>
+  <tr>
+    <td><b>Adição</b></td>
+    <td><b>5 + 3 = 8</b></td>
+  </tr>
+  <tr>
+    <td><b>Subtração</b></td>
+    <td><b>4 - 2 = 2</b></td>
+  </tr>
+  <tr>
+    <td><b>Multiplicação</b></td>
+    <td><b>3 * 6 = 18</b></td>
+  </tr>
+  <tr>
+    <td><b>Divisão</b></td>
+    <td><b>8 / 2 = 4</b></td>
+  </tr>
+  <tr>
+    <td><b>Módulo ou Resto</b></td>
+    <td><b>8 % 3 = 2</b></td>
+  </tr>
+  <tr>
+    <td><b>Exponenciação</b></td>
+    <td><b>2 ** 3 = 8</b></td>
+  </tr>
+  <tr>
+    <td><b>Divisão Inteira</b></td>
+    <td><b>9 // 2 = 4</b></td>
+  </tr>
+</table>
+<br><br>
+
+<hr>
+
+  <h1 class="titulo">Operadores Relacionais</h1>
+  
+
+  <p class="paragrafo">Operadores relacionais são utilizados para comparar valores, o resultado de uma expressão relacional é um valor booleano (<b>Verdadeiro</b> ou <b>Falso</b>).<br> Os operadores relacionais são: igual, diferente, maior, menor, maior ou igual e menor ou igual.<br><br>
+
+  <table>
+  	<tr>
+  		<th>Operador</th>
+  		<th>Sinal</th>
+  	</tr>
+  	<tr>
+  		<td><b>Igual</b></td>
+  		<td><b>==</b></td>
+  	</tr>
+  	<tr>
+  		<td><b>Diferente</b></td>
+  		<td><b>!=</b></td>
+  	</tr>
+  	<tr>
+  		<td><b>Menor</b></td>
+  		<td><b>&lt;</b></td>
+  	</tr>
+  	<tr>
+  		<td><b>Maior</b></td>
+  		<td><b>></b></td>
+  	</tr>
+  	<tr>
+  		<td><b>Menor igual</b></td>
+  		<td><b>&lt;=</b></td>
+  	</tr>
+  	<tr>
+  		<td><b>Maior igual</b></td>
+  		<td><b>>=</b></td>
+  	</tr>
+  </table>
+<br>
+
+<p class="paragrafo"> <br><br>
+
+Os operadores relacionais são muito utilizados em programação, as decisões dos algoritmos geralmente são tomadas nas operações relacionais, ou seja, as decisões baseiam-se em testes do estado das variáveis. Então é muito importante entender o que é uma operação relacional e quais os operadores utilizados nesse tipo de expressão.<br><br>
+
+Podemos comparar uma expressão relacional a uma pergunta cuja
+veracidade estamos testando. Se a expressão relacional for verdade, ela
+resulta no valor lógico Verdadeiro. Caso contrário, ela resulta no valor
+lógico Falso.<br><br>
+
+Alguns operadores relacionais <strong>não funcionam</strong> com alguns tipos de variáveis. Se forem valores do tipo <i>string</i> (caractere)
+ou lógico só é possível usar o <b>==</b> (Igual) e <b>!=</b> (Diferente). Para os tipos
+numéricos real e inteiro podemos usar qualquer operador lógico para
+comparação.<br><br>
+
+Lembrando que as variáveis precisam ser do <strong>mesmo tipo</strong> para a
+comparação ser considerada válida, exceto inteiro com real, pois são números.</p><br><br>
+
+<h1 class="subtitulo">Exemplos</h1>
+
+<table>
+	<tr>
+		<th>Operador</th>
+		<th>Comparação</th>
+		<th>Resultado</th>
+	</tr>
+	<tr>
+		<td><b>Igual</b></td>
+		<td><b>7 == 7</b></td>
+		<td><b>Verdadeiro</b></td>
+	</tr>
+	<tr>
+		<td><b>Diferente</b></td>
+		<td><b>10 != 10</b></td>
+		<td><b>Falso</b></td>
+	</tr>
+	<tr>
+		<td><b>Maior</b></td>
+		<td><b>10 > 20</b></td>
+		<td><b>Falso</b></td>
+	</tr>
+	<tr>
+		<td><b>Menor</b></td>
+		<td><b>100 &lt; 1000</b></td>
+		<td><b>Verdadeiro</b></td>
+	</tr>
+	<tr>
+		<td><b>Menor igual</b></td>
+		<td><b>125 &lt;= 250</b></td>
+		<td><b>Verdadeiro</b></td>
+	</tr>
+	<tr>
+		<td><b>Maior igual</b></td>
+		<td><b>60 >= 60</b></td>
+		<td><b>Verdadeiro</b></td>
+	</tr>
+</table>
+<br><br>
+
+<hr>
+  <h6 style="font-size: 23px">Deixe seu feedback sobre esta página:</h6>
+
+<form action="comentario.html">
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required="" placeholder="Nome" /><br><br>
+    </div><br>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required="" placeholder="Email" /><br><br>
+    </div><br>
+    <div>
+        <label for="Comentário">Comentário:</label>
+        <textarea id="Comentário" placeholder="Comente aqui..." required=""></textarea>
+    </div><br>
+    <div >
+        <button class="button">Enviar</button>
+    </div>
+</form>
+<br><br><br>
+
+<nav class="ultimo">
+  <h6>&#174; Copyright 101 - Info 2019. Todos os direitos reservados.</h6>
+</nav>
+
+
+  <button onclick="topFunction()" id="button" title="Volta ao topo">Topo</button>
+
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("button").style.display = "block";
+  } else {
+    document.getElementById("button").style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>

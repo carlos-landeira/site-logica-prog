@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Lógica Booleana</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Lógica Booleana na linguagem Python!">
+  <meta name="keywords" content="Lógica, Programação, Booleana, Python">
+  <meta name="author" content="Benlove Anelus">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="120">
+  <link rel="stylesheet" type="text/css" href="../CSS/Boleana.css">
+
+ <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+
+ <style >
+   .logo {
+  width: 70px;
+  height: 70px;
+  float: left;
+ margin-left: 60px; 
+ margin-bottom: 30px;
+ margin-top: 10px; 
+  padding: 0px ;
+  color: white;
+  cursor: auto;  
+}
+#animar:hover{
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+}
+
+ </style>
+
+</head>
+<body>
+  <header>
+   <a href="#"><img id="animar" src="../img/logo.png" class="logo" alt="logo"></a>
+    <div class="conteudo">
+   
+      <nav>
+        <ul>
+          <li><a href="index.html" accesskey="m">Menu principal</a></li>
+          <li><a href="boleana.html" accesskey="b">Lógica Booleana</a></li>
+          <li><a href="operadores.html" accesskey="o">Operadores aritméticos e relacionais</a></li>
+          <li><a href="paulo.html" accesskey="p">Laços de repetição </a></li>
+        
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <h1 id="titulo">Lógica Booleana</h1>
+
+
+  <!-- Biografia de George-->
+  
+ <div class="biografia">
+    <h2 >Biografia de George Boole</h2>
+   <img src="../img/boole.jpg  " alt="boole">George Boole nasceu no dia 2 de novembro de 1815, no Reino Unido. Ele foi um Matemático. Era filho de um sapateiro, e não tinha condições financeiras para obter um grau elevado em termos de educação. Mas a sua determinação levaria a que ultrapassa-se esse obstáculo. Enquanto criança estudou na Escola Primária Lincoln, e depois numa Escola Comercial. George Boole, no inicio se interessou por línguas, tendo aulas particulares de Latim com um livreiro local. Aos doze anos de idade já conseguia traduzir um Poema Lírico em Latim, do poeta Horácio, demonstrando assim enormes capacidades. Aos 16 anos já era Professor Assistente, quatro anos mais tarde acabaria por fundar a sua própria Escola isto em 1835. Já a algum tempo que Boole estudava matemática sozinho, embora já seu Pai o tivesse estimulado quando era novo ao dar-lhe um ensaio de construção de Instrumentos Ópticos. Trabalhos de Laplace e Lagrange eram alvo do estudo de Boole, através de notas que retirava. Recebeu encorajamento de Duncan Gregory, Editor de um Jornal Matemático, para estudar em Cambrige. Contudo não abandonaria seus Pais, que necessitavam dos seus cuidados. <br>
+   Em 1844, lançou um trabalho sobre, a Aplicação de métodos Algébricos, para a solução de Equações Diferenciais, recebendo uma medalha de Ouro da Royal Society.<br>
+
+  A Analise Matemática da Lógica foi outro dos trabalhos publicados em 1847, que divulgou assim as ideias que tinha da Lógica Simbólica, assim a Lógica, apresentada por Aristóteles, poderá ser apresentada por Equações Algébricas. Boole disse inclusive. "Nós não necessitamos mais de associar Lógica e Metafísica, mas sim Lógica e Matemática".<br>
+
+  Boole tornou-se rapidamente conhecido, e o seu trabalho e ideias reconhecidos por todos os Matemáticos Britânicos e não só. Em 1840, foi foi eleito para ocupar o lugar de Professor principal de Matemática na Irlanda, em Queen´s College em Cork. E seria ali, que Boole iria permanecer para o resto da vida. Uma investigação sobre as Leis do Pensamento, seria em 1854 a sua nova publicação, onde estão cimentadas as Teorias da Lógica e das Probabilidades. Ele conseguiu aquilo que é conhecido como Álgebra de Boole, pois abordou a Lógica, de forma a reduzi-la a uma Álgebra simples, inserindo Lógica em Matemática. Boole casou em 1855, com Mary Everest.<br>
+
+  Em 1857 foi eleito membro da Royal Society, e recebeu Honras e reconhecimento das Universidades de Dublin e Oxford. Um trabalho sobre Equações Diferenciais em 1859, e em 1860 sobre cálculo de diferenças finitas, e outro sobre Métodos Gerais nas Probabilidades, foram alvo da investigação de Boole. Publicou muitos trabalhos, e foi o primeiro a investigar a propriedade básica dos números, tal como a Propriedade Distributiva. Do seu casamento, com Mary Everest teve cinco filhas. Boole viria a falecer em 1864, com apenas 49 anos de idade vitima de Pneumonia. Hoje em dia a Álgebra de Boole, é aplicada na construção dos Computadores, sendo assim uma das razões fundamentais da revolução que os computadores estão a ter no mundo de hoje, aplica-se igualmente à pesquisa de Inteligência Artificial e na ligação dos telefones, entre muitas outras aplicações.<br>
+
+  Boole foi e continua a ser considerado pelos colegas de profissão, e por todos aqueles que se dedicam à matemática, como tendo sido um homem genial. A lei especial da Lógica de Boole diz que x em relação a y = x. Para isso ser verdade, x = 1 ou x = 0. Sendo assim, a Lógica de Boole tem de utilizar um sistema Binário. <br> 
+George Boole faleceu aos 49 anos, no dia 8 de dezembro de 1864, na Irlanda, vítima de Pneumonia.  </div>
+<!--Fim da biografia-->
+
+<p class="paragrafo"> Lógica Boolena é uma sentença declarativa que podemos ter uma resposta verdadeira ou falso. É chamada de lógica "booleana" justamente, uma homenagem a George Boole, um inventor de lógica matemática.
+Quando George Boole passou a estudar as operações matemáticas de forma diferente, separando todos os símbolos das coisas sobre as quais eles operavam, com o intuito de criar um sistema simples e totalmente simbólico. Surge assim a lógica matemática.<br> Mas, como a Lógica de Boole (ou lógica booleana) utiliza um sistema numérico binário, na época de sua descoberta não foi utilizada. Com o surgimento do computador, a utilização do sistema binário tornou-se indispensável e, obviamente, a lógica de Boole passou a ter aplicação prática.<br><br>
+Os computadores de uma forma geral, e qualquer outra máquina controlada por um processador, trabalham com sistema binário, composto apenas pelos números um e zero. E foram estes dois números que deram origem à lógica booleana.
+Assim como bem e mal, claro e escuro, fácil e difícil, certo e errado são opostos, com 0 e 1 não é diferente.
+Na lógica Booleana, o zero representa falso, enquanto o um representa verdadeiro. Para trabalhar com esses valores e torná-los algo lógico, que possa ser aplicado, são necessárias as chamadas <b>PORTAS LÓGICAS!</b></p><br>
+
+
+    <h2>O que são portas Lógicas?</h2>
+    <p class="paragrafo">Uma porta lógica é como uma sala que possuí entradas e saidas. Assim, os bits entram, são processados de acordo com a função da sala, e saem da sala em forma de resultado. </p>
+    <h3>NOT</h3>
+    <p class="paragrafo">A porta lógica NOT é como multiplica um número por menos um, o número que era positivo passa a ser negativo, e o que era negativo passa a ser positivo, é conhecida como inversor por, literalmente, inverte o bit de entrada. Se o bit de entrada for um, por exemplo, o bit de saída será zero, e vice-versa.</p>
+    <h3>AND</h3>
+    <p class="paragrafo">And, traduzindo para o português, significa E. Assim como no português o E é usado para a junção de idéias, na lógica booleana é aplicado da mesma maneira.
+    Essa porta lógica possui dois bits de entrada e um de saída. Para que o bit de saída seja verdadeiro (valor 1) ambos os bits de entrada devem ser verdadeiros.</p><br>
+    <h3>OR</h3>
+    <p class="paragrafo">Or, significa OU e, assim como no português o “ou” tem a função de indicar escolha, na lógica booleana é quase a mesma coisa. Da mesma maneira que a porta AND, a porta OR possui dois bits de entrada e um de saída.
+    Para que o bit de saída tenha o valor um (verdadeiro), pelo menos um dos bits de entrada precisa ser verdadeiro.</p>
+
+
+  <h1 id="subtitulo">Tabela verdade</h1>
+  <p class="paragrafo">Tabela verdade é um dispositivo utilizado no estudo da lógica matemática. Com o uso desta tabela é possível definir o valor lógico de uma proposição, isto é, saber quando uma sentença é verdadeira ou falsa.
+
+      Em lógica, as proposições representam pensamentos completos e indicam afirmações de fatos ou ideias.
+      As preposições são representados por uma letra do alfabeto. Essas letras tem  afunção de receber uma afirmação.
+
+      Utiliza-se a tabela verdade em proposições compostas, ou seja, sentenças formadas por proposições simples, sendo que o resultado do valor lógico depende apenas do valor de cada proposição.
+
+      Para combinar proposições simples e formar proposições compostas são utilizados conectivos lógicos. Estes conectivos representam operações lógicas.
+      Uma preposição tem um principio de não contradição, isto é, não pode ser verdadeiro e falso ao mesmo tempo.
+
+      Na tabela abaixo, indicamos os principais conectivos, os símbolos usados para representá-los, a operação lógica que representam e o resultante valor lógico.</p>
+      <br><br>
+      <table>
+        <tr>
+          <th> Conectivo </th>
+          <th> Símbolo </th>
+          <th> Operação Lógica </th>
+          <th>Valor Lógico</th>
+
+        </tr>
+     
+
+         <tr>
+            <td><b> não </b></td>
+            <td><b> ~ </b></td>
+            <td><b> Negação </b></td>
+            <td><b>Inverterá o valor das proposições. Ex: V=F, F=V. </b></td>
+        </tr>
+      
+
+        <tr>
+            <td><b> e </b></td>
+            <td><b> ^ </b></td>
+            <td><b> Conjunção </b></td>
+            <td><b>Somente será verdadeiro se todas <br> as proposições forem verdadeiros.</b></td>
+        </tr>
+        
+
+        <tr>
+          <td><b> ou </b></td>
+          <td><b>  v  </b></td>
+          <td><b> Disjunção </b></td>
+          <td><b> Será verdadeira quando pelo menos uma <br> das proposições forem verdadeira.</b></td>
+        </tr>
+        
+        <tr>
+          <td><b>Se...então </b></td>
+          <td><b> --&gt;  </b></td>
+          <td><b> Condicional </b></td>
+          <td><b>Será falsa quando a proposição<br> antecedente for verdadeira e a <br>consequente for falsa.</b></td>
+        </tr>
+        
+
+        <tr>
+          <td><b>...se somente se...</b></td>
+          <td><b> &lt;--&gt; </b></td>
+          <td><b> Bicondicional</b></td>
+          <td><b>Será verdadeira quando ambas<br> as proposições forem verdadeiras <br> ou ambas falsas.</b></td>
+
+        </tr>
+      </table>
+      <br>
+             <h3> Exemplo </h3>
+             <p class="paragrafo"> p: O sol está brilhando.<br> q: Está calor hoje. <br>
+              <i><u>Obs: p e q são preposições lógicas.</u></i> </p>
+             <h4 class="conectivo">Usando o conectivo "e" (^). </h4><br>
+             <p class="paragrafo"> p^q: O sol está brilhando <strong><u>e</u></strong> está calor hoje. <br>
+             <h4 class="conectivo">Usando o conectivo "não" (~).</h4> <br>
+             <p class="paragrafo">~p^~q: O sol <strong><u>não</u></strong> está brilhando <strong><u>e não</u></strong> está calor hoje. </p><br>
+             <h4 class="conectivo">Usando o conetivo "ou" (v).</h4><br>
+             <p class="paragrafo"> pvq: O sol está brilhando <strong><u>ou</u></strong> está calor hoje.</p><br>
+             <h4 class="conectivo">Usando o conectivo "se...então..." --&gt;)</h4><br>
+             <p class="paragrafo">p--&gt;q: <strong><u>Se</u></strong> o sol está brilhando, <strong><u>então</u></strong> está calor hoje.</p><br>
+             <h4 class="conectivo">Usando o conectivo "...se somente se..." (&lt;--&gt;)</h4><br>
+             <p class="paragrafo"> p&lt;--&gt;q: O sol está brilhando <strong><u>se somente se</u></strong> está calor hoje.</p><br><br>
+             <h3>Montando uma tabela da verdade. </h3>
+             <p class="paragrafo">Para montar uma tabela, são combinadas todas as posibilidades, isto é, combinar a posibilidade de uma preposição ter o valor lógico verdadeiro e valor lógico falso. A tabela tende a ter mais linhas quanto mais preposições. uma preposição é equivaltente á duas linhas da tabela, duas preposições, quatro linhas, três preposições, oito linhas, e assim sucessivamente. Portanto a cada preposição as linhas dobram.</p>
+
+             <h4>Uma Tabela com três preposições</h4>
+
+
+
+
+  <table>
+        <tr>
+
+          <th> p </th>
+          <th> q </th>
+          <th> r </th>
+          <th>~p </th>
+          <th> ~P^q </th>
+          <th> (~P^q)vr </th>
+          
+
+        </tr>
+        
+         <tr>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+          </tr>
+
+          <tr>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td> 
+          </tr>
+
+          <tr>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td> 
+          </tr>
+
+          <tr>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td> 
+          </tr>
+
+          <tr>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+          </tr>
+
+          <tr>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+          </tr>
+
+          <tr>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+          </tr>
+
+          <tr>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+            <td><b> V </b></td>
+            <td><b> F </b></td>
+            <td><b> F </b></td>
+          </tr>
+            
+</table>
+<br><br>
+
+<hr>
+  <h6 style="font-size: 23px">Deixe seu feedback sobre esta página:</h6>
+
+<form action="comentario.html">
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required="" placeholder="Nome" /><br>
+    </div><br>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required="" placeholder="Email" /><br>
+    </div><br>
+    <div>
+        <label for="Comentário">Comentário:</label>
+        <textarea id="Comentário" placeholder="Comente aqui..." required=""></textarea>
+    </div><br>
+    <div >
+        <button class="button">Enviar</button>
+    </div>
+</form>
+
+
+
+<br class="ultim">
+
+<!--botão-->
+
+<button onclick="topFunction()" id="button" title="Volta ao topo">Topo</button>
+
+<script>
+//Quando o usuário rolar 60px para baixo, mostre o botão
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    document.getElementById("button").style.display = "block";
+  } else {
+    document.getElementById("button").style.display = "none";
+  }
+}
+
+// Quando o usuário clica no botão, volta na parte superior da página
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<nav class="ultimo">
+  <h6>&#174; Copyright 101 - Info 2019. Todos os direitos reservados.</h6>
+</nav>
+
+</body>
+</html>

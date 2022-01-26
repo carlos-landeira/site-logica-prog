@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Laços de Repetição</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Laços de Repetição na linguagem Python">
+    <meta name="keywords" content="Lógica, Programação, Laços de Repetição">
+    <meta name="author" content="Paulo Ismaél">
+  <link rel="stylesheet" type="text/css" href="../CSS/lacos.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
+</head>
+<body>
+<header>
+   <a href="#"><img id="animar" src="../img/logo.png" class="logo" alt="logo"></a>
+    <div class="conteudo">
+   
+      <nav>
+        <ul>
+          <li><a href="index.html" accesskey="m">Menu principal</a></li>
+          <li><a href="boleana.html" accesskey="b">Lógica Booleana</a></li>
+          <li><a href="operadores.html" accesskey="o">Operadores aritméticos e relacionais</a></li>
+          <li><a href="paulo.html" accesskey="p">Laços de repetição </a></li>
+        
+        </ul>
+      </nav>
+    </div>
+  </header>
+	<h1 id="titulo">Laços de Repetição</h1>
+	<h1 class="subtitulo">O que é?</h1>
+		<p class="paragrafo">São estruturas que permitem a execução de instruções repetidas vezes, até que uma condição seja atingida. Elas são: <b>IF</b>, <b>FOR</b> e <b>WHILE</b>
+    </p>
+    <h1 class="subtitulo">IF</h1>
+    <p class="paragrafo">O IF é uma estrutura de condição que permite avaliar uma expressão e, de acordo com seu resultado, executar uma determinada ação. Dentro do IF existem duas condições que são: <strong>Elif</strong> e <strong>Else</strong>.</p><br><br>
+  <!-- IF-->
+  <p class="paragrafo">No exemplo a seguir, é um uso do IF para verificamos se a variável idade é menor que 20. Em caso positivo, imprimimos uma mensagem na tela, e em caso negativo, o código seguirá normalmente, desconsiderando a linha 3.</p><br>
+  <br>
+  <p class="borda">1 idade = 18<br>
+2 if idade &lt; 20:<br>
+3     print(‘Você é jovem!’)
+</p> <br><br>
+<p class="paragrafo">Como podemos notar, essa estrutura é formada pela palavra reservada if, seguida por uma condição e por dois pontos (:). 
+Se fosse necessária a execução de outras linhas no caso da idade ser menor que 20, elas também deveriam estar no mesmo nível de indentação da linha 3.</p><br>
+<hr>
+<h1 class="subtitulo"> Elif</h1>
+  <p class="paragrafo">Vimos anteriormente como utilizar o IF para executar uma ação caso uma condição seja atendida. 
+Adicionalmente, se existir mais de uma condição alternativa que precisa ser verificada, devemos utilizar o elif para avaliar as expressões intermediárias antes de usar o else.</p><br><br>
+<p class="borda">1 idade = int(input('Digite sua idade: '))
+2 if idade &rsaquo; = 10 and idade &lt;20:<br>
+3    print('Você é adoslecente')<br>
+4 elif idade &rsaquo; = 20 and idade &lt;30:<br>
+5    print('Você é jovem')<br>
+6 elif idade &rsaquo; = 30 and idade &lt;== 100:
+7    print('Você é adulto')<br>
+8 else:<br>
+9    print('Valor não encontrado!')<br>
+</p> <br><br>
+  <p class="paragrafo">Na linha 2, verificamos se o valor informado está dentro de uma faixa de valores específica. 
+Por outro lado, caso o resultado não seja o esperado, então o programa verificará o próximo condicional, na linha 4 e, caso ele seja verdadeiro, a linha 5 será executada.
+  </p>
+  <!--For e While-->
+  <h1 class="subtitulo">For e While</h1>
+  <p class="paragrafo">Em algumas situações, é comum que uma mesma instrução (ou conjunto delas) precise ser executada várias vezes seguidas. 
+Nesses casos, normalmente utilizamos um loop (ou laço de repetição), que permite executar um bloco de código repetidas vezes, enquanto uma dada condição é atendida. 
+Em Python, os loops são codificados por meio dos comandos for e while.</p>
+<br><br>
+<p class="borda">1 nomes = ['Pedro', 'João', 'Leticia']<br>
+2 for n in nomes:<br>
+3    print(n)<br>
+4 &rsaquo;&rsaquo;&rsaquo;<br>
+5 Pedro<br>
+6 João<br>
+7 Leticia<br>
+</p> <br><br>
+<p class="paragrafo">A variável definida na linha 1 é uma lista inicializada com uma sequência de valores do tipo string. 
+A instrução for percorre todos esses elementos, um por vez e, em cada caso, atribui o valor do item à variável n, que é impressa em seguida. 
+No código a seguir, vemos um exemplo de uso do laço while, onde definimos a variável contador, iniciando com 0, e enquanto seu valor for menor que 5, executamos as instruções das linhas 3 e 4.</p>
+<br><br>
+<p class="borda">01 contador = 0<br>
+02 while contador &lt; 5:<br>
+03     print(contador)<br>
+04     contador = contador + 1<br>
+
+</p> <br><br>
+<p class="paragrafo">Observe que na linha 4 incrementamos a variável contador, de forma que em algum momento seu valor ultrapasse 5. 
+Estruturas de controle, condicionais e de repetição, estão presentes na maioria das linguagens de programação e representam uma parte fundamental de cada uma delas.</p>
+<br><br>
+
+<hr>
+  <h6 style="font-size: 23px">Deixe seu feedback sobre esta página:</h6>
+
+<form action="comentario.html">
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required="" placeholder="Nome" /><br><br>
+    </div><br>
+    <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required="" placeholder="Email" /><br><br>
+    </div><br>
+    <div>
+        <label for="Comentário">Comentário:</label>
+        <textarea id="Comentário" placeholder="Comente aqui..." required=""></textarea>
+    </div><br>
+    <div >
+        <button class="button">Enviar</button>
+    </div>
+</form>
+<br><br><br>
+
+<nav class="ultimo">
+  <h6>&#174; Copyright 101 - Info 2019. Todos os direitos reservados.</h6>
+</nav>
+
+
+  <button onclick="topFunction()" id="button" title="Volta ao topo">Topo</button>
+
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("button").style.display = "block";
+  } else {
+    document.getElementById("button").style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  
+</body>
+</html>
